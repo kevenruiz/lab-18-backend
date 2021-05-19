@@ -17,14 +17,11 @@ async function run() {
         hash VARCHAR(512) NOT NULL
       );
     
-      CREATE TABLE cats (
+      CREATE TABLE movies (
         id SERIAL PRIMARY KEY NOT NULL,
-        name VARCHAR(512) NOT NULL,
-        type VARCHAR(128) NOT NULL,
-        url VARCHAR(1024) NOT NULL,
-        year INTEGER NOT NULL,
-        lives INTEGER NOT NULL,
-        is_sidekick BOOLEAN DEFAULT FALSE NOT NULL,
+        movie_id INTEGER NOT NULL, --not in (our) database
+        title VARCHAR(1024) NOT NULL,
+        image VARCHAR(1024),
         user_id INTEGER NOT NULL REFERENCES users(id)
       );
     `);
