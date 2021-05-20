@@ -5,9 +5,13 @@ describe('API Data Munging', () => {
 
   const expectedMovies = [
     {
-      movieId: 11,
-      title: 'Star Wars',
-      image: '/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg',
+      movieId: 550,
+      title: 'Fight Club',
+      year: '1999-10-15',
+      genre: 'Drama',
+      rating: 8.4,
+      img: '/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg'
+
     }
 
   ];
@@ -20,8 +24,9 @@ describe('API Data Munging', () => {
     // act 
     const output = formatMovies(movieData);
 
+
     // assert
-    expect(output[0]).toEqual(expectedMovies);
+    expect(output).toEqual(expectedMovies);
   });
 
 });

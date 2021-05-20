@@ -1,65 +1,91 @@
-export default {
-  'page': 1,
-  'results': [
+const movieData = [{
+  'adult': false,
+  'backdrop_path': '/rr7E0NoGKxvbkb89eR1GwfoYjpA.jpg',
+  'belongs_to_collection': null,
+  'budget': 63000000,
+  'genres': [
     {
-      'adult': false,
-      'backdrop_path': '/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg',
-      'genre_ids': [
-        12,
-        28,
-        878
-      ],
-      'id': 11,
-      'original_language': 'en',
-      'original_title': 'Star Wars',
-      'overview': 'Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.',
-      'popularity': 70.878,
-      'poster_path': '/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg',
-      'release_date': '1977-05-25',
-      'title': 'Star Wars',
-      'video': false,
-      'vote_average': 8.2,
-      'vote_count': 15495
-    },
-    {
-      'adult': false,
-      'backdrop_path': '/jn52me8AagfNt7r84SgQbV0R9ZG.jpg',
-      'genre_ids': [
-        28,
-        12,
-        878
-      ],
-      'id': 181812,
-      'original_language': 'en',
-      'original_title': 'Star Wars: The Rise of Skywalker',
-      'overview': 'The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.',
-      'popularity': 207.635,
-      'poster_path': '/db32LaOibwEliAmSL2jjDF6oDdj.jpg',
-      'release_date': '2019-12-18',
-      'title': 'Star Wars: The Rise of Skywalker',
-      'video': false,
-      'vote_average': 6.5,
-      'vote_count': 6679
-    },
-    {
-      'adult': false,
-      'backdrop_path': '/5Iw7zQTHVRBOYpA0V6z0yypOPZh.jpg',
-      'genre_ids': [
-        878,
-        28,
-        12
-      ],
-      'id': 181808,
-      'original_language': 'en',
-      'original_title': 'Star Wars: The Last Jedi',
-      'overview': 'Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.',
-      'popularity': 77.423,
-      'poster_path': '/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg',
-      'release_date': '2017-12-13',
-      'title': 'Star Wars: The Last Jedi',
-      'video': false,
-      'vote_average': 6.9,
-      'vote_count': 11881
+      'id': 18,
+      'name': 'Drama'
     }
-  ]
-};
+  ],
+  'homepage': 'http://www.foxmovies.com/movies/fight-club',
+  'id': 550,
+  'imdb_id': 'tt0137523',
+  'original_language': 'en',
+  'original_title': 'Fight Club',
+  'overview': 'A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground "fight clubs" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.',
+  'popularity': 39.759,
+  'poster_path': '/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg',
+  'production_companies': [
+    {
+      'id': 508,
+      'logo_path': '/7PzJdsLGlR7oW4J0J5Xcd0pHGRg.png',
+      'name': 'Regency Enterprises',
+      'origin_country': 'US'
+    },
+    {
+      'id': 711,
+      'logo_path': '/tEiIH5QesdheJmDAqQwvtN60727.png',
+      'name': 'Fox 2000 Pictures',
+      'origin_country': 'US'
+    },
+    {
+      'id': 20555,
+      'logo_path': '/hD8yEGUBlHOcfHYbujp71vD8gZp.png',
+      'name': 'Taurus Film',
+      'origin_country': 'DE'
+    },
+    {
+      'id': 54051,
+      'logo_path': null,
+      'name': 'Atman Entertainment',
+      'origin_country': ''
+    },
+    {
+      'id': 54052,
+      'logo_path': null,
+      'name': 'Knickerbocker Films',
+      'origin_country': 'US'
+    },
+    {
+      'id': 25,
+      'logo_path': '/qZCc1lty5FzX30aOCVRBLzaVmcp.png',
+      'name': '20th Century Fox',
+      'origin_country': 'US'
+    },
+    {
+      'id': 4700,
+      'logo_path': '/A32wmjrs9Psf4zw0uaixF0GXfxq.png',
+      'name': 'The Linson Company',
+      'origin_country': 'US'
+    }
+  ],
+  'production_countries': [
+    {
+      'iso_3166_1': 'DE',
+      'name': 'Germany'
+    },
+    {
+      'iso_3166_1': 'US',
+      'name': 'United States of America'
+    }
+  ],
+  'release_date': '1999-10-15',
+  'revenue': 100853753,
+  'runtime': 139,
+  'spoken_languages': [
+    {
+      'english_name': 'English',
+      'iso_639_1': 'en',
+      'name': 'English'
+    }
+  ],
+  'status': 'Released',
+  'tagline': 'Mischief. Mayhem. Soap.',
+  'title': 'Fight Club',
+  'video': false,
+  'vote_average': 8.4,
+  'vote_count': 21722
+}];
+export default movieData;
