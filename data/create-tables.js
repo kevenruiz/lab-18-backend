@@ -17,11 +17,14 @@ async function run() {
         hash VARCHAR(512) NOT NULL
       );
     
-      CREATE TABLE movies (
+      CREATE TABLE favorites (
         id SERIAL PRIMARY KEY NOT NULL,
         movie_id INTEGER NOT NULL, --not in (our) database
         title VARCHAR(1024) NOT NULL,
-        image VARCHAR(1024),
+        year VARCHAR(1024) NOT NULL,
+        genre VARCHAR(1024),
+        rating DOUBLE PRECISION,
+        img VARCHAR(1024),
         user_id INTEGER NOT NULL REFERENCES users(id)
       );
     `);

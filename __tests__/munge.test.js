@@ -11,7 +11,6 @@ describe('API Data Munging', () => {
       genre: 'Drama',
       rating: 8.4,
       img: '/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg'
-
     }
 
   ];

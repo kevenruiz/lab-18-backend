@@ -3,7 +3,7 @@
 import client from '../lib/client.js';
 // import our seed data:
 import users from './users.js';
-import movies from './movies-data.js';
+import movies from './movie-model.js';
 
 run();
 
@@ -27,10 +27,10 @@ async function run() {
     await Promise.all(
       movies.map(movie => {
         return client.query(`
-        INSERT INTO cats (name, type, url, year, lives, is_sidekick, user_id)
+        INSERT INTO favorites (movie_id, title, year, genre, rating, img, user_id)
         VALUES ($1, $2, $3, $4, $5, $6, $7)
         `,
-          [movie.id, movie.title, movie.poster_path, user.id]);
+          [movie.movieId, movie.title, movie.year, movie.genre, movie.rating, movie.img, user.id]);
       })
     );
     
