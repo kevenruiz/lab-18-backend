@@ -12,7 +12,7 @@ describe('API Routes', () => {
 
   describe('favorites', () => {
     let user;
-    //  let user2;
+    //let user2;
 
     beforeAll(async () => {
       execSync('npm run recreate-tables');
@@ -39,7 +39,7 @@ describe('API Routes', () => {
 
       expect(response2.status).toBe(200);
 
-      user2 = response2.body;
+      //   user2 = response2.body;
     });
 
     let favorite = {
