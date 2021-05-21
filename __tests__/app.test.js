@@ -68,6 +68,37 @@ describe('API Routes', () => {
       favorite = response.body;
     
     });
+    it('GET my /api/me/favorites only returns my favorites', async () => {
+      const response = await request.get(`/api/movies/${user.id}/favorites`)
+        .set('Authorization', user.token);
+
+      // expect(response.status).toBe(200);
+      expect(response.body).toEqual({ ...favorite, userName: 'Merlin' });
+
+
+      // // this is setup so that there is a favorite belong to someone else in the db
+      // const otherResponse = await request
+      //   .get('/api/movies/:id/favorites')
+      //   .set('Authorization', user2.token)
+      //   .send(
+      //     {
+      //       id: expect.any(Number),
+      //       movieId: 550,
+      //       title: 'Fight Club',
+      //       year: '1999-10-15',
+      //       genre: 'Drama',
+      //       rating: 8.4,
+      //       img: '/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg'
+      //     }
+
+      //   );
+
+      // expect(otherResponse.status).toBe(200);
+      // const otherFavorite = otherResponse.body;
+
+      // we are testing this
+
+    });
 
   });
 });
