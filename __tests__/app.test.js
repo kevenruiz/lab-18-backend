@@ -12,7 +12,7 @@ describe('API Routes', () => {
 
   describe('favorites', () => {
     let user;
-    let user2;
+    //  let user2;
 
     beforeAll(async () => {
       execSync('npm run recreate-tables');
